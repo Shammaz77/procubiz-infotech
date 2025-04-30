@@ -4811,7 +4811,7 @@ html.is-animating .mil-frame {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .digi {
     width: 80px;
   }

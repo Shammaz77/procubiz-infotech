@@ -509,6 +509,10 @@ $(function () {
                 return '<span class="' + className + '">' + (menu[index]) + '</span>';
             },
         },
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+          },
         speed: 800,
         effect: 'fade',
         parallax: true,
@@ -951,6 +955,7 @@ $(function () {
                 },
             },
             speed: 800,
+            
             effect: 'fade',
             parallax: true,
             navigation: {
