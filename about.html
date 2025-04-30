@@ -797,23 +797,14 @@
 	<script src="js/plugins/ScrollTo.min.js"></script>
 	<!-- ashley js -->
 	<script src="js/main.js"></script>
-
 	<script>
 		var teamSwiper = new Swiper(".team-swiper", {
-			slidesPerView: 4,
+			slidesPerView: 1, // base mobile value
 			spaceBetween: 30,
 			loop: true,
 			autoplay: {
-				delay: 3000, // time between slides in milliseconds
-				disableOnInteraction: false, // keeps autoplay running after user interactions
-			},
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
+				delay: 3000,
+				disableOnInteraction: false,
 			},
 			breakpoints: {
 				576: {
@@ -826,8 +817,18 @@
 					slidesPerView: 4,
 				},
 			},
+			// Remove these if you don't want dots/arrows
+			// pagination: {
+			// 	el: ".swiper-pagination",
+			// 	clickable: true,
+			// },
+			// navigation: {
+			// 	nextEl: ".swiper-button-next",
+			// 	prevEl: ".swiper-button-prev",
+			// },
 		});
 	</script>
+	
 	
 </body>
 
