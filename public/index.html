@@ -254,9 +254,12 @@
 					</div>
 				</section>
 				<!-- banner end -->
-				<a href="https://wa.me/+917306809591" target="_blank" class="whatsapp-button">
+				<!-- <a href="https://wa.me/+917306809591" class="whatsapp-button" target="_blank">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Chat on WhatsApp">
-				</a>
+			</a>
+			 -->
+
+			
 				<!-- about -->
 				<section id="about">
 					<div class="container mil-p-120-30">
@@ -550,7 +553,15 @@
 					</div>
 				</div>
 				<!-- partners end -->
-
+				<a href="#" id="whatsappButton" class="whatsapp-button">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="Chat on WhatsApp">
+					</a>
+					<script>
+					document.getElementById("whatsappButton").addEventListener("click", function (e) {
+						e.preventDefault();
+						window.open("https://wa.me/917306809591", "_blank");
+					});
+					</script>
 
 				<!-- footer -->
 				<footer class="mil-dark-bg">
@@ -644,16 +655,68 @@
 									<div class="mil-vert-between">
 										<div class="mil-mb-30">
 											<ul class="mil-social-icons mil-up">
-												<li><a href="https://www.instagram.com/procubizinfotech?igsh=bXdkeXFkemRic2Z0" target="_blank"
-														class="social-icon"> <i class="ri-instagram-line"></i></a></li>
-												<li><a
-														href="https://www.facebook.com/people/ProCubiz-Infotech/61561522782989/?rdid=x6BGiP0y26vhRc1F&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Z5gd3McNP%2F"
-														target="_blank" class="social-icon"> <i class="ri-facebook-circle-line"></i></a></li>
-												<li><a href="https://x.com/procubiz?t=30OKuEOr5sBRYcN5DpaiFQ&s=09" target="_blank"
-														class="social-icon"> <i class="ri-twitter-x-line"></i></a></li>
-												<li><a href="#." target="_blank" class="social-icon"> <i class="ri-whatsapp-line"></i></a></li>
-												<li><a href="https://www.linkedin.com/company/procubiz-infotech/" target="_blank"
-														class="social-icon"> <i class="ri-linkedin-fill"></i></a></li>
+												<li>
+													<a href="#" id="instagramLink" class="social-icon">
+														<i class="ri-instagram-line"></i>
+													</a>
+												</li>
+
+
+												<li>
+													<a href="#" id="facebookLink" class="social-icon">
+														<i class="ri-facebook-circle-line"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" id="twitterLink" class="social-icon">
+														<i class="ri-twitter-x-line"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" id="whatsappLink" class="social-icon">
+														<i class="ri-whatsapp-line"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" id="linkedinLink" class="social-icon">
+														<i class="ri-linkedin-fill"></i>
+													</a>
+												</li>	
+												
+												<script>
+													document.getElementById("instagramLink").addEventListener("click", function (e) {
+														e.preventDefault(); // prevent the default anchor behavior
+														window.open("https://www.instagram.com/procubizinfotech?igsh=bXdkeXFkemRic2Z0", "_blank");
+													});
+												</script>
+												
+												
+												
+												
+										
+												
+												<script>
+													document.getElementById("facebookLink").addEventListener("click", function (e) {
+														e.preventDefault();
+														window.open("https://www.facebook.com/people/ProCubiz-Infotech/61561522782989/?rdid=x6BGiP0y26vhRc1F&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Z5gd3McNP%2F", "_blank");
+													});
+												
+													document.getElementById("twitterLink").addEventListener("click", function (e) {
+														e.preventDefault();
+														window.open("https://x.com/procubiz?t=30OKuEOr5sBRYcN5DpaiFQ&s=09", "_blank");
+													});
+												
+													document.getElementById("whatsappLink").addEventListener("click", function (e) {
+														e.preventDefault();
+														window.open("https://wa.me/917306809591", "_blank"); // You can customize the WhatsApp number/link here
+													});
+												
+													document.getElementById("linkedinLink").addEventListener("click", function (e) {
+														e.preventDefault();
+														window.open("https://www.linkedin.com/company/procubiz-infotech/", "_blank");
+													});
+												</script>
+												
 
 											</ul>
 										</div>
